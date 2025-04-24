@@ -15,15 +15,15 @@ load_dotenv()
 nest_asyncio.apply()
 
 # Get configuration from environment variables
-AWS_REGION = os.environ.get("AWS_REGION", "ap-southeast-3")
+AWS_REGION = os.environ.get("AWS_REGION")
 AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_SESSION_TOKEN = os.environ.get("AWS_SESSION_TOKEN")
-CONFIG_AGGREGATOR_NAME = os.environ.get("CONFIG_AGGREGATOR_NAME", "lz-audit-config-aggregator")
+CONFIG_AGGREGATOR_NAME = os.environ.get("CONFIG_AGGREGATOR_NAME")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 # Grafana API configuration
-GRAFANA_API_URL = "https://grafana-ccoe.com/api/ds/query"
+GRAFANA_API_URL = os.environ.get("GRAFANA_API_URL")
 GRAFANA_API_KEY = os.environ.get("GRAFANA_API_KEY")
 
 # Initialize OpenAI client with new SDK syntax
