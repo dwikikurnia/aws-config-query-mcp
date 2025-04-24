@@ -19,6 +19,8 @@ The AWS Resource Management & Security Scanning Bot is a Python-based tool desig
 - "Find EC2 instances running Windows"
 - "List RDS instances that are publicly accessible"
 
+![AWS Config Resources Query Flow](flow-process-awsconfig.png)
+
 ### 2. Security Posture Scanning
 
 - Check security status of AWS accounts
@@ -35,6 +37,8 @@ The AWS Resource Management & Security Scanning Bot is a Python-based tool desig
 - "Please scan account Tools"
 - "Is there any security issue on MyTelkomsel?"
 - "Check security posture for all Production accounts"
+
+![Security Scanning Flow](flow-process-security-scanning.png)
 
 ## Prerequisites
 
