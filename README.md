@@ -48,8 +48,7 @@ The AWS Resource Management & Security Scanning Bot is a Python-based tool desig
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-org/aws-resource-management-bot.git
-cd aws-resource-management-bot
+git clone https://github.com/dwikikurnia/aws-config-query-mcp.git
 ```
 
 2. Install required dependencies
@@ -62,7 +61,7 @@ pip install -r requirements.txt
    Create a `.env` file with the following:
 
 ```
-AWS_REGION=ap-southeast-3
+AWS_REGION=your_region
 AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_SESSION_TOKEN=your_aws_session_token
@@ -76,13 +75,13 @@ GRAFANA_API_KEY=your_grafana_api_key
 Run the bot interactively:
 
 ```bash
-python bot.py
+python server.py
 ```
 
 Select from two main tools:
 
 1. AWS Config Resource Query
-2. Security Posture Check
+2. Security Scanning Check
 
 ### Command-Line Interaction Example
 
@@ -90,47 +89,22 @@ Select from two main tools:
 AWS Resource Management Bot
 Available tools:
 1. Query AWS Config Resources
-2. Scan & Check Security Posture Account Based
+2. Scan & Check Security Scanning Account Based
 
 Select a tool (1 or 2): 1
-Enter your resource query: Show me all S3 buckets without encryption
+Enter your resource query: List EC2 Instance Type t3.small
 ```
 
 ## Key Technologies
 
 - Python
 - AWS SDK (boto3)
-- OpenAI GPT Models
-- Pandas
-- AsyncIO
-- Grafana API
 - AWS Config
-
-## Security Considerations
-
-- Supports multi-account AWS environments
-- Uses secure API authentication
-- Generates temporary output files for each query
-- Supports filtering and keyword-based searching
-
-## Limitations
-
-- Requires valid AWS, OpenAI, and Grafana API credentials
-- Performance depends on the complexity of queries and number of resources
-- Natural language processing accuracy is model-dependent
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+- AWS IAM
+- OpenAI GPT Models
+- MCP Framework
+- Grafana API
 
 ## Contact
 
-Your Name - dwikikurnia1@gmail.com
+Dwiki Kurnia - dwikikurnia1@gmail.com

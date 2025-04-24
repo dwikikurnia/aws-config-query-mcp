@@ -499,7 +499,7 @@ if __name__ == "__main__":
     print("AWS Resource Management Bot")
     print("Available tools:")
     print("1. Query AWS Config Resources")
-    print("2. Scan & Check Security Posture Account Based")
+    print("2. Scan & Check Security Scanning Account Based")
     print("Type 'exit' to quit")
     
     while True:

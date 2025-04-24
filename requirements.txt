@@ -1,0 +1,26 @@
+# Core Dependencies for AWS Resource Management Bot
+# Python Version: 3.10.x
+
+# AWS and Cloud Dependencies
+boto3==1.37.10
+botocore==1.37.10
+python-dotenv==1.1.0
+
+# Data Processing and Analysis
+pandas==1.5.3
+numpy==1.26.4
+
+# API and Web Requests
+requests==2.31.0
+openai==1.58.1
+
+# Async Programming
+asyncio==3.4.3
+nest-asyncio==1.5.6
+
+# MCP Server
+fastmcp==2.2.1
+
+# Security
+cryptography==42.0.3
+
